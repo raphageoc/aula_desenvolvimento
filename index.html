@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Aula webmapa</title>
+  <meta name="author" content="Raphael" />
+  <meta name="description" content="Conteúdo da aula pratica de introdução a construção de mapas na web">
+  <link rel="shortcut icon"
+    href="https://www.prppg.ufpr.br/site/ppggeografia/wp-content/uploads/sites/71/2023/05/posgraduacao.png"
+    type="image/x-icon" />
+    <link rel="stylesheet" href="./meu-arquivo-css.css" />
+<script src="./conflitos.js"></script>
+<script src="./centroides.js"></script>
+<script src="./favelas.js"></script>
+<!-- <script src="meu-arquivo-js.js"></script> -->
+  <script type="module" crossorigin src="./assets/index-DPmYI4jn.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-C6NTwQBu.css">
+</head>
+
+<body>
+ <div id="map"></div>
+
+   
+  <header id="cabecalho-principal">
+    <section>
+      <img src="./assets/globo-C3S_5V9C.png" alt="globo">
+    </section>
+    <nav>
+      <a href=#home>Introdução</a>
+      <a href=#map1>Mapa coroplético</a>
+      <a href=#map2>Mapa de símbolos pontuais proporcionais</a>
+      <a href=#map3>Mapa de Calor</a>
+    </nav>
+
+  </header>
+  <main>
+    <article id="home">
+
+      <section id="introducao_disciplina">
+        <h2>Disciplina: Introdução a construção de mapas temáticos no ambiente web</h2>
+        Web mapas são utilizados todos os dias ….
+      </section>
+      <section id="topicos_abordados">
+        <ul>
+          <li> Revisão sobre cartografia</li>
+          <li>Mapas
+            temáticos</li>
+          <li>Geoserviços</li>
+          <li>Html</li>
+          <li>Css</li>
+          <li>Javascript</li>
+          <li>Biblioteca de
+            mapas</li>
+
+        </ul>
+      </section>
+      <aside id="referencias">
+        <h2>Referências</h2>
+        <ul>
+          <li>https://openlayers.org/</li>
+          <li>https://developer.mozilla.org/pt-BR/docs/Web/HTML </li>
+        </ul>
+      </aside>
+    </article>
+
+    <section id="map1" class="container_mapa">
+      <div id="mapa1"></div>
+      <section id="descricao_coropletico">
+        <h3> Descrição do mapa</h3>
+        <table>
+          <tr>
+            <td>Tipo de Representação</td>
+            <td>Método Coroplético</td>
+          </tr>
+          <tr>
+           <td>Método de Classificação</td>
+           <td>Jenks</td>
+          </tr>
+          <tr>
+           <td>Tema</td>
+           <td>Conflitos rurais</td>
+          </tr>
+        </table>
+
+      </section>
+    </section>
+
+    <section id="map2" class="container_mapa">
+      <div id="mapa2"></div>
+      <section>
+        <h3> Descrição do mapa</h3>
+        <table>
+          <tr>
+            <td>Método de Representação</td>
+            <td>Simbolos pontuais proporcionais</td>
+           </tr>
+           <tr>
+             <td>Método de Classificação</td>
+             <td>Método não classificado</td>
+           </tr>
+           <tr>
+             <td>Tema</td>
+             <td>Conflitos rurais</td>
+           </tr>
+        </table>
+      </section>
+    </section>
+
+    <section id="map3" class="container_mapa">
+      <div id="mapa3"></div>
+      <section>
+        <h3> Descrição do mapa</h3>
+        <table>
+          <tr>
+           <td>Método de Representação</td>
+           <td>Mapa de calor</td>
+          </tr>
+          <tr>
+            <td>Tema</td>
+            <td>Favelas</td>
+          </tr>
+          <tr>
+            <td>Tamanho do raio</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Valor de blur</td>
+            <td>30</td>
+          </tr>
+        </table>
+      </section>
+    </section>
+
+  </main>
+  <footer id="rodape_principal">
+    <address>
+      Desenvolvido por Raphael
+      Email:<a href="mailto:raphageoc@gmail.com">raphageoc@gmail.com</a>
+    </address>
+  </footer>
+
+</body>
+
+</html>
